@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMSI EduPlatform - Semestre 4</title>
+    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo EMSI" style="height: 120px; vertical-align: middle; mix-blend-mode: multiply;">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-btn"><i class="fas fa-home"></i> Accueil</a></li>
+            
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="nav-btn dropbtn"><i class="fas fa-graduation-cap"></i> 2 AP <i class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                <div class="dropdown-content">
+                    <div class="dropdown-group">
+                        <span>1ère Année</span>
+                        <a href="#" onclick="showUnavailableAlert(event)">Semestre 1 (S1)</a>
+                        <a href="#" onclick="showUnavailableAlert(event)">Semestre 2 (S2)</a>
+                    </div>
+                    <div class="dropdown-group">
+                        <span>2ème Année</span>
+                        <a href="#" onclick="showUnavailableAlert(event)">Semestre 3 (S3)</a>
+                        <a href="#courses">Semestre 4 (S4)</a> </div>
+                </div>
+            </li>
+
+            <li><a href="#subjects" class="nav-btn"><i class="fas fa-map"></i> Roadmap</a></li>
+            <li><a href="#courses" class="nav-btn"><i class="fas fa-book"></i> Catalogue</a></li>
+            <li><a href="#team" class="nav-btn"><i class="fas fa-users"></i> Équipe</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+  <header id="home" class="hero animated-bg">
+        <div class="hero-content">
+            <div class="glowing-badge"><i class="fas fa-folder-open"></i> Classes Préparatoires (2AP) - EMSI</div>
+            <h1 class="main-title">Portail des Cours et <span class="highlight">Ressources PDF</span></h1>
+            <p class="hero-desc">Accédez en un clic à l'intégralité des supports, travaux dirigés (TD) et travaux pratiques (TP) des deux années préparatoires (S1 à S4). Un parcours structuré autour de 7 modules clés par semestre, conçu par et pour les étudiants afin de bâtir de solides bases en ingénierie.</p>
+            <div class="hero-btns">
+                <a href="#courses" class="btn-primary glow-btn"><i class="fas fa-download"></i> Parcourir les Semestres</a>
+                <a href="#subjects" class="btn-secondary"><i class="fas fa-map-signs"></i> Voir la Roadmap</a>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+<section class="stats-bar floating-stats">
+        <div class="stat-item">
+            <h3>4</h3>
+            <p>Semestres (2AP)</p>
+        </div>
+        <div class="stat-item">
+            <h3>28</h3>
+            <p>Modules au Total</p>
+        </div>
+        <div class="stat-item">
+            <h3>100+</h3>
+            <p>Ressources PDF</p>
+        </div>
+        <div class="stat-item">
+            <h3>4</h3>
+            <p>Développeurs</p>
+        </div>
+    </section>
+
+    <section id="subjects" class="roadmap-section">
+        <div class="section-header">
+            <h2>Roadmap du Cycle Préparatoire (2AP)</h2>
+            <p>Découvrez le parcours complet des 4 semestres. Chaque session est composée de <strong>7 modules fondamentaux</strong>.</p>
+        </div>
+        
+        <div class="timeline">
+            
+            <div class="timeline-year"><span>1ère Année - S1</span></div>
+            <div class="timeline-item left reveal-element">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <i class="fas fa-graduation-cap icon-glow"></i>
+                    <h4>S1: Fondamentaux 1</h4>
+                    <ul class="module-list">
+                        <li>Français / English</li>
+                        <li>Méthodologie du travail universitaire</li>
+                        <li>Analyse / Algèbre</li>
+                        <li>Circuits numériques / Électriques</li>
+                        <li>Algorithmique</li>
+                        <li>Langage de programmation C</li>
+                        <li>Comptabilité générale / Org. Entreprises</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-year"><span>1ère Année - S2</span></div>
+            <div class="timeline-item right reveal-element">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <i class="fas fa-microchip icon-glow"></i>
+                    <h4>S2: Fondamentaux 2</h4>
+                    <ul class="module-list">
+                        <li>Français / English</li>
+                        <li>Techniques rédactionnelles / Initiation IA</li>
+                        <li>Analyse / Algèbre</li>
+                        <li>Circuits numériques / Électriques</li>
+                        <li>Algorithmique</li>
+                        <li>Langage de programmation C</li>
+                        <li>Thermodynamique / Électromagnétisme</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-year"><span>2ème Année - S3</span></div>
+            <div class="timeline-item left reveal-element">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <i class="fas fa-project-diagram icon-glow"></i>
+                    <h4>S3: Approfondissement</h4>
+                    <ul class="module-list">
+                        <li>Français / English</li>
+                        <li>Analyse / Probabilités</li>
+                        <li>Électronique Analogique</li>
+                        <li>Programmation Langage C</li>
+                        <li>Conception des Systèmes d'Information</li>
+                        <li>Microprocesseurs / Systèmes d'Exploitation</li>
+                        <li>Ouverture Culturelle et Artistique</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-year year-active"><span>2ème Année - S4 (Actuel)</span></div>
+            <div class="timeline-item right reveal-element">
+                <div class="timeline-dot dot-active"></div>
+                <div class="timeline-content glass-card active-card">
+                    <i class="fas fa-code icon-glow"></i>
+                    <h4>S4: Spécialisation & Web</h4>
+                    <ul class="module-list">
+                        <li>Français / English</li>
+                        <li>Analyse 4 / Statistiques</li>
+                        <li>Électronique Analogique 2</li>
+                        <li>Langage C & Structure de données</li>
+                        <li>Développement Intégré (Web & SQL)</li>
+                        <li>Automatismes & Arduino</li>
+                        <li>Développement Personnel</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+        <div class="section-header">
+            <h2>Catalogue des Cours - Semestre 4</h2>
+            <p>Détail de tous les modules et matières enseignés cette session. Cliquez sur un cours pour télécharger les supports.</p>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="info">Informatique & Web</button>
+            <button class="filter-btn" data-filter="sciences">Sciences & Ingénierie</button>
+            <button class="filter-btn" data-filter="langues">Langues & Soft Skills</button>
+        </div>
+
+        <div class="courses-grid">
+
+            <div class="course-card" data-category="langues" data-pdfs="cours/Francais/francais.pdf" data-names="Support de Cours : Français">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500" alt="Français">
+                <div class="course-info">
+                    <h3>Français Avancé 2</h3>
+                    <p class="instructor">Module: MS4AP01 (Langues)</p>
+                    <div class="course-meta"><span><i class="fas fa-book"></i> Communication</span></div>
+                </div>
+            </div>
+
+          <div class="course-card" data-category="langues" data-pdfs="cours/English/Business Vocab Unit 9.pdf, cours/English/Negotiation vocab.pdf" data-names="Business Vocab Unit 9, Negotiation Vocab">
+                <img src="WHY-ENGLISH.webp" alt="English">
+                <div class="course-info">
+                    <h3>Pre-Intermediate English 2</h3>
+                    <p class="instructor">Module: MS4AP01 (Langues)</p>
+                    <div class="course-meta"><span><i class="fas fa-globe"></i> English</span></div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="sciences" data-pdfs="cours/Analyse/TD 1.pdf" data-names="Série d'exercices : TD 1">
+                <img src="mathématique.jpg" alt="Analyse">
+                <div class="course-info">
+                    <h3>Analyse 4</h3>
+                    <p class="instructor">Module: MS4AP02 (Mathématiques 4)</p>
+                    <div class="course-meta"><span><i class="fas fa-calculator"></i> Mathématiques</span></div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="sciences" data-pdfs="cours/Statistiques descriptives/Serie 1.pdf, cours/Statistiques descriptives/Serie 2.pdf" data-names="Série d'exercices 1, Série d'exercices 2">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Statistiques">
+                <div class="course-info">
+                    <h3>Statistiques Descriptives</h3>
+                    <p class="instructor">Module: MS4AP02 (Mathématiques 4)</p>
+                    <div class="course-meta"><span><i class="fas fa-chart-pie"></i> Mathématiques</span></div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="sciences" data-pdfs="cours/Electrronique Analogique/chapitre 4 ELECTRONIQUE ANALOGIQUE .pdf, cours/Electrronique Analogique/Chapitre 5 Transistor bipolaire et ses applications.pdf, cours/Electrronique Analogique/chapitre 6 Transistor a effet champ.pdf, cours/Electrronique Analogique/TD DIODE.pdf" data-names="Chapitre 4 : Électronique Analogique, Chapitre 5 : Transistor bipolaire, Chapitre 6 : Transistor à effet champ, Série d'exercices : TD Diode">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Electronique">
+                <div class="course-info">
+                    <h3>Électronique Analogique 2</h3>
+                    <p class="instructor">Module: MS4AP03 (Électronique)</p>
+                    <div class="course-meta"><span><i class="fas fa-bolt"></i> Physique/Élec</span></div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="info" data-pdfs="cours/Programmation avancee/TD 1 Pointeurs-1.pdf, cours/Programmation avancee/TD 2.pdf, cours/Programmation avancee/TD 3.pdf" data-names="Série d'exercices : TD 1 (Pointeurs), Série d'exercices : TD 2, Série d'exercices : TD 3">
+                <img src="c.jpg" alt="Langage C">
+                <div class="course-info">
+                    <h3>Langage C & Structure de données</h3>
+                    <p class="instructor">Module: MS4AP04 (Programmation)</p>
+                    <div class="course-meta"><span><i class="fas fa-code"></i> Code</span></div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="info" data-pdfs="cours/Developpement WEB/dev TP1_Portfolio_HTML.pdf, cours/Developpement WEB/dev TP2_Proprietes_CSS_HTML.pdf,cours/Developpement WEB/dev TP3_PortfolioCSS.pdf" data-names="TP 1 : Portfolio HTML, TP 2 : Propriétés CSS,TP 3 : Portfolio CSS">
+                <div class="badge-bestseller">Projet de Classe</div>
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Web Dev">
+                <div class="course-info">
+                    <h3>Développement Web</h3>
+                    <p class="instructor">Module: MS4AP05 (Dév Intégré)</p>
+                    <div class="course-meta"><span><i class="fas fa-laptop-code"></i> Front-end/Back-end</span></div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="info" data-pdfs="cours/Bases des donnees/bas TD 1.pdf, cours/Bases des donnees/Base D.D Semaine 2 - LDD.pptx, cours/Bases des donnees/bASE D..D Semaine 3 - LDD.pptx" data-names="Série Exercices (TD 1), Cours Semaine 2 (PPTX), Cours Semaine 3 (PPTX)">
+                <img src="sql.png" alt="SQL">
+                <div class="course-info">
+                    <h3>Bases de données relationnelles</h3>
+                    <p class="instructor">Module: MS4AP05 (Dév Intégré)</p>
+                    <div class="course-meta"><span><i class="fas fa-database"></i> SQL</span></div>
+                </div>
+            </div>
+
+           <div class="course-card" data-category="sciences" data-pdfs="cours/Automatismes Seuentiels/TD 1.pdf, cours/Automatismes Seuentiels/TD 2.pdf" data-names="Série d'exercices : TD 1, Série d'exercices : TD 2">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500" alt="Automatismes">
+                <div class="course-info">
+                    <h3>Automatismes Séquentiels</h3>
+                    <p class="instructor">Module: MS4AP06 (Sciences Ingénieur)</p>
+                    <div class="course-meta"><span><i class="fas fa-cogs"></i> Ingénierie</span></div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="sciences" data-pdfs="cours/Infoomatique Industrielle/TP1_partie_I.pdf, cours/Infoomatique Industrielle/TP2_Arduino_Version_2.pdf, cours/Infoomatique Industrielle/TP3 - partie I.pdf, cours/Infoomatique Industrielle/TP4.pdf, cours/Infoomatique Industrielle/TP5 - Partie I.pdf, cours/Infoomatique Industrielle/TP6.pdf" data-names="TP 1 : Partie I, TP 2 : Arduino Version 2, TP 3 : Partie I, TP 4, TP 5 : Partie I, TP 6">
+                <img src="https://images.unsplash.com/photo-1553406830-ef2513450d76?w=500" alt="Informatique Industrielle">
+                <div class="course-info">
+                    <h3>Informatique Industrielle</h3>
+                    <p class="instructor">Module: MS4AP06 (Sciences Ingénieur)</p>
+                    <div class="course-meta"><span><i class="fas fa-microchip"></i> Arduino / Embarqué</span></div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="langues" data-pdfs="cours/Developpement Personnel/Developpement personnel.pdf" data-names="Support de Cours : Développement Personnel">
+                <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=500" alt="Dev Personnel">
+                <div class="course-info">
+                    <h3>Développement Personnel</h3>
+                    <p class="instructor">Module: MS4AP07</p>
+                    <div class="course-meta"><span><i class="fas fa-users"></i> Soft Skills</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="professor" class="professor-section">
+        <div class="prof-container">
+            <div class="prof-image-wrapper">
+                <img src="Inc.jpg" alt="Professor" class="prof-img">
+            </div>
+            <div class="prof-text">
+                <h3>Sous l'encadrement de :</h3>
+                <h2 class="prof-name">Mme. FOUZIA EL ABASSI</h2>
+                <p>Professeure de Développement Web à l'EMSI. Merci pour votre précieux encadrement et vos conseils tout au long de ce projet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="section-header">
+            <h2>Réalisé par l'Équipe</h2>
+            <p>Groupe d'étudiants - 2ème Année Ingénierie (Semestre 4)</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="Ayman.jpeg" alt="Ayman">
+                </div>
+                <h3>Ayman Bitor</h3>
+                <p>Développeur Full-Stack</p>
+            </div>
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="AAYOUB.jpeg" alt="Ayoub">
+                </div>
+                <h3>Ayoub EL aanbri</h3>
+                <p>Designer UI/UX</p>
+            </div>
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="maroua.jpeg" alt="Maroua">
+                </div>
+                <h3>Maroua Ezzahiri</h3>
+                <p>Spécialiste Bases de Données</p>
+            </div>
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="anas.jpeg" alt="Anas">
+                </div>
+                <h3>Anas Danan</h3>
+                <p>Analyste Système</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">EMSI<span>Projet</span></div>
+            <p>Travail réalisé dans le cadre du contrôle de module Développement Web (Semestre 4).</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tous droits réservés | Équipe Bitor, EL aanbri, Ezzahiri, Danan | EMSI 2ème Année</p>
+        </div>
+    </footer>
+
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
