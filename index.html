@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <link rel="stylesheet" href="style.css?v=6">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-  <nav class="navbar">
+    <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" alt="Logo EMSI" style="height: 120px; vertical-align: middle; mix-blend-mode: multiply;">
+            <img src="logo.png" alt="Logo EMSI"
+                style="height: 120px; vertical-align: middle; mix-blend-mode: multiply;">
         </div>
         <ul class="nav-links" id="nav-links">
             <li><a href="#home" class="nav-btn"><i class="fas fa-home"></i> Accueil</a></li>
-            
+
             <li class="dropdown">
-                <a href="javascript:void(0)" class="nav-btn dropbtn"><i class="fas fa-graduation-cap"></i> 2 AP <i class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                <a href="javascript:void(0)" class="nav-btn dropbtn"><i class="fas fa-graduation-cap"></i> 2 AP <i
+                        class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 5px;"></i></a>
                 <div class="dropdown-content">
                     <div class="dropdown-group">
                         <span>1ère Année</span>
@@ -41,13 +45,16 @@
         </div>
     </nav>
 
-  <header id="home" class="hero animated-bg">
+    <header id="home" class="hero animated-bg">
         <div class="hero-content">
             <div class="glowing-badge"><i class="fas fa-folder-open"></i> Classes Préparatoires (2AP) - EMSI</div>
             <h1 class="main-title">Portail des Cours et <span class="highlight">Ressources PDF</span></h1>
-            <p class="hero-desc">Accédez en un clic à l'intégralité des supports, travaux dirigés (TD) et travaux pratiques (TP) des deux années préparatoires (S1 à S4). Un parcours structuré autour de 7 modules clés par semestre, conçu par et pour les étudiants afin de bâtir de solides bases en ingénierie.</p>
+            <p class="hero-desc">Accédez en un clic à l'intégralité des supports, travaux dirigés (TD) et travaux
+                pratiques (TP) des deux années préparatoires (S1 à S4). Un parcours structuré autour de 7 modules clés
+                par semestre, conçu par et pour les étudiants afin de bâtir de solides bases en ingénierie.</p>
             <div class="hero-btns">
-                <a href="#courses" class="btn-primary glow-btn"><i class="fas fa-download"></i> Parcourir les Semestres</a>
+                <a href="#courses" class="btn-primary glow-btn"><i class="fas fa-download"></i> Parcourir les
+                    Semestres</a>
                 <a href="#subjects" class="btn-secondary"><i class="fas fa-map-signs"></i> Voir la Roadmap</a>
             </div>
         </div>
@@ -58,8 +65,8 @@
         </div>
     </header>
 
-<!-- stats-bar مصغرة بـ padding و font-size أقل -->
-<section class="stats-bar floating-stats" style="padding: 12px 0;">
+    <!-- stats-bar مصغرة بـ padding و font-size أقل -->
+    <section class="stats-bar floating-stats" style="padding: 12px 0;">
         <div class="stat-item" style="padding: 6px 20px;">
             <h3 style="font-size: 1.3em; margin: 0;">4</h3>
             <p style="font-size: 0.8em; margin: 0;">Semestres (2AP)</p>
@@ -81,11 +88,12 @@
     <section id="subjects" class="roadmap-section">
         <div class="section-header">
             <h2>Roadmap du Cycle Préparatoire (2AP)</h2>
-            <p>Découvrez le parcours complet des 4 semestres. Chaque session est composée de <strong>7 modules fondamentaux</strong>.</p>
+            <p>Découvrez le parcours complet des 4 semestres. Chaque session est composée de <strong>7 modules
+                    fondamentaux</strong>.</p>
         </div>
-        
+
         <div class="timeline">
-            
+
             <div class="timeline-year"><span>1ère Année - S1</span></div>
             <div class="timeline-item left reveal-element">
                 <div class="timeline-dot"></div>
@@ -164,9 +172,10 @@
     <section id="courses" class="courses-section">
         <div class="section-header">
             <h2>Catalogue des Cours - Semestre 4</h2>
-            <p>Détail de tous les modules et matières enseignés cette session. Cliquez sur un cours pour télécharger les supports.</p>
+            <p>Détail de tous les modules et matières enseignés cette session. Cliquez sur un cours pour télécharger les
+                supports.</p>
         </div>
-        
+
         <div class="filters">
             <button class="filter-btn active" data-filter="all">Tous</button>
             <button class="filter-btn" data-filter="info">Informatique & Web</button>
@@ -176,21 +185,22 @@
 
         <div class="courses-grid">
 
-           <div class="course-card" 
-     data-category="langues" 
-     data-pdfs="cours/Francais/francais.pdf, cours/Francais/Cours%20PPT.pptx" 
-     data-names="Support de Cours : Français, Cours PPT">
-     
-    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500" alt="Français">
-    
-    <div class="course-info">
+            <div class="course-card" data-category="langues"
+                data-pdfs="cours/Francais/francais.pdf, cours/Francais/Cours%20PPT.pptx"
+                data-names="Support de Cours : Français, Cours PPT">
+
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500" alt="Français">
+
+                <div class="course-info">
                     <h3>Français Avancé 2</h3>
                     <p class="instructor">Module: MS4AP01 (Langues)</p>
                     <div class="course-meta"><span><i class="fas fa-book"></i> Communication</span></div>
                 </div>
             </div>
 
-          <div class="course-card" data-category="langues" data-pdfs="cours/English/Business Vocab Unit 9.pdf, cours/English/Negotiation vocab.pdf" data-names="Business Vocab Unit 9, Negotiation Vocab">
+            <div class="course-card" data-category="langues"
+                data-pdfs="cours/English/Business Vocab Unit 9.pdf, cours/English/Negotiation vocab.pdf"
+                data-names="Business Vocab Unit 9, Negotiation Vocab">
                 <img src="WHY-ENGLISH.webp" alt="English">
                 <div class="course-info">
                     <h3>Pre-Intermediate English 2</h3>
@@ -199,32 +209,34 @@
                 </div>
             </div>
 
-          <div class="course-card" data-category="sciences" data-pdfs="cours/Analyse/TD 1.pdf, cours/Analyse/TD 2.pdf" data-names="Série d'exercices : TD 1, Série d'exercices : TD 2">
-    <img src="mathématique.jpg" alt="Analyse">
-    <div class="course-info">
-        <h3>Analyse 4</h3>
-        <p class="instructor">Module: MS4AP02 (Mathématiques 4)</p>
-        <div class="course-meta"><span><i class="fas fa-calculator"></i> Mathématiques</span></div>
-    </div>
-</div>
+            <div class="course-card" data-category="sciences" data-pdfs="cours/Analyse/TD 1.pdf, cours/Analyse/TD 2.pdf"
+                data-names="Série d'exercices : TD 1, Série d'exercices : TD 2">
+                <img src="mathématique.jpg" alt="Analyse">
+                <div class="course-info">
+                    <h3>Analyse 4</h3>
+                    <p class="instructor">Module: MS4AP02 (Mathématiques 4)</p>
+                    <div class="course-meta"><span><i class="fas fa-calculator"></i> Mathématiques</span></div>
+                </div>
+            </div>
 
-            <div class="course-card" 
-     data-category="sciences" 
-     data-pdfs="cours/Statistiques descriptives/Serie 1.pdf, cours/Statistiques descriptives/Serie 2.pdf, cours/Statistiques descriptives/Serie 3.pdf" 
-     data-names="Série d'exercices 1, Série d'exercices 2, Série d'exercices 3">
-    
-    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Statistiques">
-    
-    <div class="course-info">
-        <h3>Statistiques Descriptives</h3>
-        <p class="instructor">Module: MS4AP02 (Mathématiques 4)</p>
-        <div class="course-meta">
-            <span><i class="fas fa-chart-pie"></i> Mathématiques</span>
-        </div>
-    </div>
-</div>
+            <div class="course-card" data-category="sciences"
+                data-pdfs="cours/Statistiques descriptives/Serie 1.pdf, cours/Statistiques descriptives/Serie 2.pdf, cours/Statistiques descriptives/Serie 3.pdf"
+                data-names="Série d'exercices 1, Série d'exercices 2, Série d'exercices 3">
 
-            <div class="course-card" data-category="sciences" data-pdfs="cours/Electrronique Analogique/chapitre 4 ELECTRONIQUE ANALOGIQUE .pdf, cours/Electrronique Analogique/Chapitre 5 Transistor bipolaire et ses applications.pdf, cours/Electrronique Analogique/chapitre 6 Transistor a effet champ.pdf, cours/Electrronique Analogique/TD DIODE.pdf" data-names="Chapitre 4 : Électronique Analogique, Chapitre 5 : Transistor bipolaire, Chapitre 6 : Transistor à effet champ, Série d'exercices : TD Diode">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Statistiques">
+
+                <div class="course-info">
+                    <h3>Statistiques Descriptives</h3>
+                    <p class="instructor">Module: MS4AP02 (Mathématiques 4)</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-chart-pie"></i> Mathématiques</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="sciences"
+                data-pdfs="cours/Electrronique Analogique/chapitre 4 ELECTRONIQUE ANALOGIQUE .pdf, cours/Electrronique Analogique/Chapitre 5 Transistor bipolaire et ses applications.pdf, cours/Electrronique Analogique/chapitre 6 Transistor a effet champ.pdf, cours/Electrronique Analogique/TD DIODE.pdf"
+                data-names="Chapitre 4 : Électronique Analogique, Chapitre 5 : Transistor bipolaire, Chapitre 6 : Transistor à effet champ, Série d'exercices : TD Diode">
                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Electronique">
                 <div class="course-info">
                     <h3>Électronique Analogique 2</h3>
@@ -233,16 +245,30 @@
                 </div>
             </div>
 
-            <div class="course-card" data-category="info" data-pdfs="cours/Programmation avancee/TD 1 Pointeurs-1.pdf, cours/Programmation avancee/TD 2.pdf, cours/Programmation avancee/TD 3.pdf" data-names="Série d'exercices : TD 1 (Pointeurs), Série d'exercices : TD 2, Série d'exercices : TD 3">
+
+            <div class="course-card" data-category="info" data-pdfs="cours/Programmation avancee/TD 1 Pointeurs-1.pdf, 
+                cours/Programmation avancee/TD 2.pdf, 
+                cours/Programmation avancee/TD 3.pdf, 
+                cours/Programmation avancee/TD4_Listes_Simplement_Chainees.pdf" data-names="Série d'exercices : TD 1 (Pointeurs), 
+                 Série d'exercices : TD 2, 
+                 Série d'exercices : TD 3, 
+                 Série d'exercices : TD 4 (Listes simplement chaînées)">
+
                 <img src="c.jpg" alt="Langage C">
+
                 <div class="course-info">
                     <h3>Langage C & Structure de données</h3>
                     <p class="instructor">Module: MS4AP04 (Programmation)</p>
-                    <div class="course-meta"><span><i class="fas fa-code"></i> Code</span></div>
+                    <div class="course-meta">
+                        <span><i class="fas fa-code"></i> Code</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="course-card" data-category="info" data-pdfs="cours/Developpement WEB/dev TP1_Portfolio_HTML.pdf, cours/Developpement WEB/dev TP2_Proprietes_CSS_HTML.pdf,cours/Developpement WEB/dev TP3_PortfolioCSS.pdf" data-names="TP 1 : Portfolio HTML, TP 2 : Propriétés CSS,TP 3 : Portfolio CSS">
+
+            <div class="course-card" data-category="info"
+                data-pdfs="cours/Developpement WEB/dev TP1_Portfolio_HTML.pdf, cours/Developpement WEB/dev TP2_Proprietes_CSS_HTML.pdf,cours/Developpement WEB/dev TP3_PortfolioCSS.pdf"
+                data-names="TP 1 : Portfolio HTML, TP 2 : Propriétés CSS,TP 3 : Portfolio CSS">
                 <div class="badge-bestseller">Projet de Classe</div>
                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Web Dev">
                 <div class="course-info">
@@ -252,7 +278,9 @@
                 </div>
             </div>
 
-            <div class="course-card" data-category="info" data-pdfs="cours/Bases des donnees/bas TD 1.pdf, cours/Bases des donnees/Base D.D Semaine 2 - LDD.pptx, cours/Bases des donnees/bASE D..D Semaine 3 - LDD.pptx" data-names="Série Exercices (TD 1), Cours Semaine 2 (PPTX), Cours Semaine 3 (PPTX)">
+            <div class="course-card" data-category="info"
+                data-pdfs="cours/Bases des donnees/bas TD 1.pdf, cours/Bases des donnees/Base D.D Semaine 2 - LDD.pptx, cours/Bases des donnees/bASE D..D Semaine 3 - LDD.pptx"
+                data-names="Série Exercices (TD 1), Cours Semaine 2 (PPTX), Cours Semaine 3 (PPTX)">
                 <img src="sql.png" alt="SQL">
                 <div class="course-info">
                     <h3>Bases de données relationnelles</h3>
@@ -261,7 +289,9 @@
                 </div>
             </div>
 
-           <div class="course-card" data-category="sciences" data-pdfs="cours/Automatismes Seuentiels/TD 1.pdf, cours/Automatismes Seuentiels/TD 2.pdf" data-names="Série d'exercices : TD 1, Série d'exercices : TD 2">
+            <div class="course-card" data-category="sciences"
+                data-pdfs="cours/Automatismes Seuentiels/TD 1.pdf, cours/Automatismes Seuentiels/TD 2.pdf"
+                data-names="Série d'exercices : TD 1, Série d'exercices : TD 2">
                 <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500" alt="Automatismes">
                 <div class="course-info">
                     <h3>Automatismes Séquentiels</h3>
@@ -270,8 +300,11 @@
                 </div>
             </div>
 
-            <div class="course-card" data-category="sciences" data-pdfs="cours/Infoomatique Industrielle/TP1_partie_I.pdf, cours/Infoomatique Industrielle/TP2_Arduino_Version_2.pdf, cours/Infoomatique Industrielle/TP3 - partie I.pdf, cours/Infoomatique Industrielle/TP4.pdf, cours/Infoomatique Industrielle/TP5 - Partie I.pdf, cours/Infoomatique Industrielle/TP6.pdf" data-names="TP 1 : Partie I, TP 2 : Arduino Version 2, TP 3 : Partie I, TP 4, TP 5 : Partie I, TP 6">
-                <img src="https://images.unsplash.com/photo-1553406830-ef2513450d76?w=500" alt="Informatique Industrielle">
+            <div class="course-card" data-category="sciences"
+                data-pdfs="cours/Infoomatique Industrielle/TP1_partie_I.pdf, cours/Infoomatique Industrielle/TP2_Arduino_Version_2.pdf, cours/Infoomatique Industrielle/TP3 - partie I.pdf, cours/Infoomatique Industrielle/TP4.pdf, cours/Infoomatique Industrielle/TP5 - Partie I.pdf, cours/Infoomatique Industrielle/TP6.pdf"
+                data-names="TP 1 : Partie I, TP 2 : Arduino Version 2, TP 3 : Partie I, TP 4, TP 5 : Partie I, TP 6">
+                <img src="https://images.unsplash.com/photo-1553406830-ef2513450d76?w=500"
+                    alt="Informatique Industrielle">
                 <div class="course-info">
                     <h3>Informatique Industrielle</h3>
                     <p class="instructor">Module: MS4AP06 (Sciences Ingénieur)</p>
@@ -279,14 +312,38 @@
                 </div>
             </div>
 
-            <div class="course-card" data-category="langues" data-pdfs="cours/Developpement Personnel/Developpement personnel.pdf" data-names="Support de Cours : Développement Personnel">
+
+            <div class="course-card" data-category="langues" data-pdfs="
+cours/Developpement Personnel/Developpement personnel.pdf,
+cours/Developpement Personnel/Formation Organisation & Gestion du stress VF.pptx,
+cours/Developpement Personnel/Présentation 3.pptx,
+cours/Developpement Personnel/Resources_Personal_development_FR_Feb_2012_2 (1).pdf,
+cours/Developpement Personnel/Séance 1 – Développement Personnel (2e Année Prépa).pdf,
+cours/Developpement Personnel/Support du cours (1).pdf,
+cours/Developpement Personnel/Atelier définitif.docx,
+cours/Developpement Personnel/Contrôle et examens projets.docx,
+cours/Developpement Personnel/atelier 3 Participants_Cour_du_Temps OK.docx" data-names="
+Support : Developpement personnel,
+Formation Organisation & Gestion du stress,
+Présentation 3,
+Resources Personal Development,
+Séance 1,
+Support du cours,
+Atelier définitif,
+Contrôle et examens projets,
+Atelier 3 Participants">
+
                 <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=500" alt="Dev Personnel">
+
                 <div class="course-info">
                     <h3>Développement Personnel</h3>
                     <p class="instructor">Module: MS4AP07</p>
-                    <div class="course-meta"><span><i class="fas fa-users"></i> Soft Skills</span></div>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> Soft Skills</span>
+                    </div>
                 </div>
             </div>
+
 
         </div>
     </section>
@@ -312,7 +369,7 @@
                 <h3>Ayoub EL aanbri</h3>
                 <p>Designer UI/UX</p>
             </div>
-           
+
         </div>
     </section>
 
@@ -336,4 +393,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
